@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
-router.use('/v1/api', require('./api/v1'));
-router.get('/', (req, res) => res.send({ Ok : true }));
+router.use('/api/v1', require('./api/v1'));
+
 
 // router.use( (err, req, res, next) => {
 

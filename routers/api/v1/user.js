@@ -1,11 +1,10 @@
 const router = require("express").Router();
+const userController = require("../../../controllers/userController");
 
 
-router.get('/test', (req,res) => {
-
-    res.json({message:'ok'});
-
-})
+router.post('/user',userController.store);
+router.get('/user/:name',userController.show);
 
 
 module.exports = router;
+
